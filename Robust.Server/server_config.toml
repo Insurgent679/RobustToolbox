@@ -12,10 +12,10 @@ enabled = false
 tickrate = 30
 port = 1212
 bindto = "::,0.0.0.0"
-max_connections = 256
+max_connections = 60
 # Automatic port forwarding!
 # Disabled by default because you may not want to do this.
-# upnp = true
+upnp = true
 
 [status]
 # The status server is the TCP side, used by the launcher to determine engine version, etc.
@@ -32,7 +32,8 @@ enabled = true
 # connectaddress = "udp://localhost:1212"
 
 [game]
-hostname = "MyServer"
+hostname = "Anomalous Northern City"
+lobby = enabled
 
 [console]
 # If this is true, people connecting from this machine (loopback)
@@ -46,7 +47,7 @@ loginlocal = true
 advertise = false
 # Comma-separated list of tags, useful for categorizing your server.
 # See https://docs.spacestation14.io/hosts/hub-rules for more details on this when it becomes relevant.
-tags = ""
+tags = "lang:ru"
 # URL of your server. Fill this in if you have a domain name,
 # want to use HTTPS (with a reverse proxy), or other advanced scenarios.
 # Must be in the form of an ss14:// or ss14s:// URI pointing to the status API.
